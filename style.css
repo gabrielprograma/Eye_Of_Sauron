@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #0f0;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    background-image: url('https://i.gifer.com/E8jj.gif'); /* Background de fogo animado estilo anos 2000 */
+    background-repeat: repeat;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 60px;
+    color: #ff0000;
+    text-shadow: 2px 2px 0px #fff, -2px -2px 0px #fff;
+    margin-bottom: 20px;
+    animation: glitch 1s infinite alternate;
+}
+
+/* Animação glitch */
+@keyframes glitch {
+    0% {
+        text-shadow: 2px 2px #f00, -2px -2px #0f0;
+    }
+    100% {
+        text-shadow: -2px -2px #f00, 2px 2px #0f0;
+    }
+}
+
+.search-bar {
+    margin: 20px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ff00ff;
+    border-radius: 5px;
+    background-color: #222;
+    color: #00ff00;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: 2px solid #ff00ff;
+    background-color: #ff00ff;
+    color: white;
+    cursor: pointer;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.search-bar button:hover {
+    background-color: #ff66ff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: #00ffff;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ff00ff;
+}
+
+a:visited {
+    color: #ff00ff;
+}
+
+.visit-counter {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+}
