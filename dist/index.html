@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Eye of Sauron</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye of Sauron</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Eye of Sauron</h1>
+      
+       <h4>To publish your website here, send me an email with the link to your website</h4>
+       <h4>and the name of the website and in a few days I will post your website here</h4>
+       <h4> my email: eyeofsauronpublish@proton.me</h4>
+    </header>
+    
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Search...">
+        <button type="button" onclick="searchFunction()">Search</button>
+    </div>
+
+    <div class="visit-counter">
+        <a href="http://www.contadordevisitas.net.br/detalhes/bD8" target="_blank">
+            <img src="https://www.contadordevisitas.net.br/bD8/" alt="Contador de Visitas" title="Contador de Visitas">
+        </a>
+    </div>
+  
+    <nav>
+        <ul id="link-list">
+            <li><a href="https://example.com">Link 1</a></li>
+            <li><a href="https://example.com">Link 2</a></li>
+            <li><a href="https://example.com">Link 3</a></li>
+            <li><a href="https://example.com">Link 4</a></li>
+            <li><a href="https://example.com">Link 5</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function searchFunction() {
+            var query = document.getElementById('search').value.toLowerCase();
+            var links = document.querySelectorAll('#link-list li');
+            var found = false;
+
+            // Loop through the links and find the one that matches the query
+            links.forEach(function(link) {
+                var linkText = link.textContent.toLowerCase();
+
+                if (linkText.includes(query) && !found) {
+                    // Move the matching link to the top of the list
+                    document.getElementById('link-list').prepend(link);
+                    found = true;
+                }
+            });
+
+            if (!found) {
+                alert('No matching link found');
+            }
+        }
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
